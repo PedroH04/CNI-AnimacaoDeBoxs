@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-display: Poppins;
+	
+	
+}
+
+/*-------- Estilização do Container e Centralização --------*/
+#container{
+	background: #1C1C1C;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+
+	width: 100%;
+	height: 100vh;
+	
+}
+
+#container > div {
+ 	background: #363636;
+
+ 	margin: 1.953125vw;
+
+ 	text-align: center;
+}
+
+/*-------- Estilização das Box --------*/
+
+.box1{
+	width:  30.76171875vw;
+	height:  30.76171875vw;
+
+	background: #363636;
+}
+
+.box2{
+	width:  30.76171875vw;
+	height:  30.76171875vw;
+
+	background: #363636;
+}
+
+.box3{
+	width:  30.76171875vw;
+	height:  30.76171875vw;
+
+	background: #363636;
+}
+/*-------- Estilização da Imagem --------*/
+img{
+	width:	11.71875vw;
+	height:  11.71875vw;
+	
+	margin-top:  1.953125vw;
+}
