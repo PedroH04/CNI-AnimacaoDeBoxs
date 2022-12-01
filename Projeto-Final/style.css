@@ -11,47 +11,35 @@ body{
 
 	align-items: center;
 	justify-content: center;
-	flex-direction: row;
 
 	width: 100%;
 	height: 100vh;
 	
 }
 
-#container > div {
- 	background: #363636;
-
- 	margin: 3%;
-	
- 	text-align: center;
-
-	
-}
-/*-------- Estilização das Box --------*/
-
-#designing-id{
-	width:  25%;
-	height:  50%;
-
-	background: #363636;
+#container #boxs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+#container #boxs > div {
+    background: #363636;
+    margin: 3%;
+    text-align: center;
 
-#development-id{
-	width:  25%;
-	height:  50%;
+}
 
-	background: #363636;
+div#boxs{
+    width: 90%;
+    height: 60vh;
 }
 
 #seo-id{
-	width:  25%;
-	height:  50%;
-
-	background: #363636;
+    overflow: hidden;
 }
 /*-------- Estilização dos Icones --------*/
-#container .icon{
+#boxs .icon{ 
 	width:	100%;
 	height:  30%;
 	margin-top:  1.953125vw;
@@ -61,7 +49,7 @@ body{
 	justify-content: center;
 }
 
-#container i{
+#container #boxs i{
 	width: 40%;
 	height: 100%;
 	display: flex;
@@ -84,6 +72,43 @@ body{
 #seo-id i {
 	border: 2px solid lightskyblue;
 
+}
+
+/*-------- Estilização dos Textos --------*/
+.h2-text{
+	color: white;
+	font-family: sans-serif;
+}
+ 
+p{
+	margin: 0px 20px 20px 20px;
+}
+#container #boxs .icon{
+	width:	100%;
+	height:  30%;
+	margin-top:  1.953125vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#container #boxs .icon i{
+    font-size: 4em;
+}
+#designing-id i {
+	border: 2px solid greenyellow;
+    color: greenyellow;
+}
+
+
+#development-id i {
+	border: 2px solid 	#FF00FF;
+    color: #FF00FF;
+}
+
+#seo-id i {
+	border: 2px solid lightskyblue;
+    color: lightskyblue;
 }
 
 /*-------- Estilização dos Textos --------*/
@@ -129,21 +154,20 @@ button a{
 #seo-button{
 	background:lightskyblue ;
 }
+/*--------- Animações do  Span  ----------
 
-/*--------- Animações do  Span  ----------*/
-
-div#designing-id{
-	position: relative;
-	
+div#boxs{
+    position: relative;
 }
 
-span{
+div#boxs span{
 	position: absolute;
 	display: block;
+    transition: 0.5;
 	
 }
 
-#designing-id span.top{
+div#boxs span.top1{
 	top: -8px;
 	left: 50px;
 	width: 250px;
@@ -152,19 +176,15 @@ span{
 	transform: rotate(15deg);
 }
 
-#designing-id:hover span.top{
-transform: rotate(15deg);
-}
-
-#designing-id span.right{
+div#boxs span.right1{
 	top: 15px;
-	right: -10px;
+	right: 90px;
 	width: 2px;
 	height: 270px;
 	background: red;
 }
 
-#designing-id span.bottom{
+div#boxs span.bottom1{
 	bottom: -10px;
 	left: 50px;
 	width: 250px;
@@ -172,7 +192,7 @@ transform: rotate(15deg);
 	background: red;
 }
 
-#designing-id span.left{
+div#boxs span.left1{
 	top: 25px;
 	left: -8px;
 	width: 2px;
@@ -180,5 +200,4 @@ transform: rotate(15deg);
 	background: red;
 }
 
-
-
+*/
