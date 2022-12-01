@@ -25,23 +25,20 @@ body{
 
 #container #boxs > div {
     background: #363636;
-    margin: 3%;
+    margin: 5%;
     text-align: center;
 
 }
 
-div#boxs{
-    width: 90%;
-    height: 60vh;
+div.field{
+    width: 100%;
+    height: 45vh;
 }
 
-#seo-id{
-    overflow: hidden;
-}
 /*-------- Estilização dos Icones --------*/
-#boxs .icon{ 
+#boxs .field .icon{ 
 	width:	100%;
-	height:  30%;
+	height:  80%;
 	margin-top:  1.953125vw;
 
 	display: flex;
@@ -49,9 +46,9 @@ div#boxs{
 	justify-content: center;
 }
 
-#container #boxs i{
+#container #boxs .field i{
 	width: 40%;
-	height: 100%;
+	height: 15vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -79,11 +76,8 @@ div#boxs{
 	color: white;
 	font-family: sans-serif;
 }
- 
-p{
-	margin: 0px 20px 20px 20px;
-}
-#container #boxs .icon{
+
+#container #boxs .field .icon{
 	width:	100%;
 	height:  30%;
 	margin-top:  1.953125vw;
@@ -92,9 +86,11 @@ p{
 	align-items: center;
 	justify-content: center;
 }
-#container #boxs .icon i{
-    font-size: 4em;
+
+#container #boxs .field .icon i{
+    font-size: 3em;
 }
+
 #designing-id i {
 	border: 2px solid greenyellow;
     color: greenyellow;
@@ -117,13 +113,9 @@ p{
 	font-family: sans-serif;
 }
  
-p{
-	margin: 0px 20px 20px 20px;
-}
-
 /*-------- Estilização dos Botões --------*/
 button{
-	width: 30%;
+	width: 45%;
 	height: 10%;
 	border: none;
 
@@ -135,12 +127,10 @@ button a{
 	padding-bottom: 8px;
 	padding-top: 8px;
 	padding-right: 10px;
-
-
+	
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	
+	justify-content: center;	
 }
 
 #designing-button{
@@ -154,9 +144,9 @@ button a{
 #seo-button{
 	background:lightskyblue ;
 }
-/*--------- Animações do  Span  ----------
+/*--------- Animações do  Span  ---------- */
 
-div#boxs{
+div#container #boxs .field{
     position: relative;
 }
 
@@ -169,27 +159,59 @@ div#boxs span{
 
 div#boxs span.top1{
 	top: -8px;
-	left: 50px;
-	width: 250px;
+	left: 20px;
+	width: 200px;
 	height: 2px;
 	background: red;
 	transform: rotate(15deg);
 }
 
-div#boxs span.right1{
-	top: 15px;
-	right: 90px;
-	width: 2px;
-	height: 270px;
+div#boxs:hover span.top1{
+	top: -8px;
+	left: 20px;
+	width: 200px;
+	height: 2px;
 	background: red;
+	transform: rotate(0deg);
+	transition: 0.5s;
+}
+
+div#boxs span.right1{
+	top: 30px;
+	right: -8px;
+	width: 2px;
+	height: 250px;
+	background: red;
+	transform: rotate(-15deg);
+}
+
+div#boxs:hover span.right1{
+	top: 30px;
+	right: -8px;
+	width: 2px;
+	height: 250px;
+	background: red;
+	transform: rotate(0deg);
+	transition: 0.5s;
 }
 
 div#boxs span.bottom1{
 	bottom: -10px;
-	left: 50px;
-	width: 250px;
+	left: 20px;
+	width: 80%;
 	height: 2px;
 	background: red;
+	transform: rotate(15deg);
+}
+
+div#boxs:hover span.bottom1{
+	bottom: -10px;
+	left: 20px;
+	width: 80%;
+	height: 2px;
+	background: red;
+	transform: rotate(0deg);
+	transition: 0.5s;
 }
 
 div#boxs span.left1{
@@ -198,6 +220,15 @@ div#boxs span.left1{
 	width: 2px;
 	height: 250px;
 	background: red;
+	transform: rotate(-15deg);
+}
+div#boxs:hover span.left1{
+	top: 25px;
+	left: -8px;
+	width: 2px;
+	height: 250px;
+	background: red;
+	transform: rotate(0deg);
+	transition: 0.5s;
 }
 
-*/
